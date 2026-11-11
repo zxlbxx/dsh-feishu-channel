@@ -1,0 +1,4 @@
+# dsh-feishu-channel：只插入一个插件条目。
+- insert:
+    - id: feishu
+      name: dsh-feishu-channel

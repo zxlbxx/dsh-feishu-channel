@@ -1,0 +1,44 @@
+{
+  "name": "dsh-feishu-channel",
+  "version": "0.4.0",
+  "description": "DSH ⇄ 飞书/Lark 通道：会话完成/出错自动推送到手机，手机上发的消息回投给工作区会话。Feishu notification + task channel for DeepSeek Harness.",
+  "type": "module",
+  "main": "./index.mjs",
+  "exports": {
+    ".": "./index.mjs",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.mjs",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20.3"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-bundle",
+    "deepseek-harness",
+    "feishu",
+    "lark",
+    "notify",
+    "im"
+  ],
+  "author": "lbxx",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "compatibility": {
+      "dsh": ">=0.2.0-rc.1 <0.3.0-0"
+    }
+  }
+}
